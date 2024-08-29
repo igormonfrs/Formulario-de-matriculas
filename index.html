@@ -122,14 +122,13 @@
                   />
                 </div>
 
-                  <div class="input-wrapper flex-1">
-                    <label for="number">Número</label>
-                    <input type="number" name="number" id="number" />
-                  </div>
-                  </div>
+                <div class="input-wrapper flex-1">
+                  <label for="number">Número</label>
+                  <input type="number" name="number" id="number" />
+                </div>
+              </div>
 
               <div class="flex">
-                
                 <div class="input-wrapper flex-2">
                   <label for="City">Rua</label>
                   <input
@@ -140,41 +139,70 @@
                     disabled
                   />
                 </div>
-                  
-                  <div class="input-wrapper flex-1">
-                    <label for="state">Estado</label>
-                    <input type="text" name="state" id="state" value="SP" disabled/>
-                  </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="state">Estado</label>
+                  <input
+                    type="text"
+                    name="state"
+                    id="state"
+                    value="SP"
+                    disabled
+                  />
                 </div>
-             
+              </div>
             </fieldset>
-            
+
             <fieldset class="gardian">
               <legend>Informações do responsável</legend>
 
               <div class="input-wrapper">
                 <label for="gardianname">Nome do responsável</label>
-                <input type="text" name="gardianname" id="gardianname">
-                <small for="gardianname">Principal responsável legal e contato de emergência</small>
+                <input type="text" name="gardianname" id="gardianname" />
+                <small for="gardianname"
+                  >Principal responsável legal e contato de emergência</small
+                >
               </div>
 
               <div class="input-wrapper">
                 <label for="phone">Telefone</label>
-                <input type="tel" name="phone" id="phone"> 
+                <input type="tel" name="phone" id="phone" />
               </div>
 
               <div class="input-wrapper">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required />
                 <div class="error">
-                  <img src="assets/icons/alert-circle.svg" alt="icone de alerta vermelho">
+                  <img
+                    src="assets/icons/alert-circle.svg"
+                    alt="icone de alerta vermelho"
+                  />
                   <span>Insira um e-mail válido</span>
                 </div>
-                
               </div>
-
             </fieldset>
 
+            <fieldset class="enroll-options">
+              <legend>Opções de matrícula</legend>
+
+              <div class="input-wrapper">
+                <label>Selecione o turno de estudo</label>
+
+                <div class="radio-wrapper">
+                  <radio class="inner">
+                    <input type="radio" name="study-shift" value="morning" id="morning">
+                    <img src="assets/icons/sun-cloud-02.svg" alt="ícone de sol com nuvem">
+                    <label for="morning">Manhã</label>
+                  </radio>
+
+                  <radio class="inner">
+                    <input type="radio" name="study-shift" value="evening" id="evening">
+                    <img src="assets/icons/sun-02.svg" alt="ícone de sol com nuvem">
+                    <label for="evening">Tarde</label>
+                  </radio>
+                </div>
+              </div>
+            </fieldset>
           </form>
         </div>
       </main>
@@ -200,7 +228,6 @@
           />
         </div>
       </aside>
-
     </div>
   </body>
 </html>
